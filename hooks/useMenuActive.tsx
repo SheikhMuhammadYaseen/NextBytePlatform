@@ -1,5 +1,4 @@
-// myblog/hooks/useMenuActive.tsx
-"use client"; // <-- Add this line to mark this file as a client component
+"use client";
 
 import { usePathname } from "next/navigation";
 

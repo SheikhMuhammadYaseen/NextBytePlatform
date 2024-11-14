@@ -6,7 +6,7 @@ import PostFilter from "./PostFilter";
 
 const Posts = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
-  const [filtered, setFiltered] = useState<Post[]>(posts); // Use the consistent Post type
+  const [filtered, setFiltered] = useState<Post[]>(posts);
 
   return (
     <div className="w-full h-fit">

@@ -1,4 +1,3 @@
-// Define the main Post type used across components
 export interface Post {
   id: number;
   title: string;

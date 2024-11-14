@@ -114,16 +114,12 @@ const Page: FC<BlogPageProps> = ({ params, searchParams }) => {
       <div className="wrapper mt-10 text-gray-900 dark:text-gray-50 flex flex-col gap-5">
         <p>{post.paragraph}</p>
       </div>
-
-      {/* Comments Section */}
       <div className="comments-section mt-10 p-5 bg-gray-100 dark:bg-gray-800 rounded-md max-w-[90%] mx-auto">
         <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-50">Comments</h2>
-        {/* Display existing comments */}
         <div className="mb-4">
           {comments.length > 0 ? (
             comments.map((comment, index) => (
               <div key={index} className="mb-4 text-gray-900 dark:text-gray-50">
-                {/* Main Comment */}
                 <div className="flex items-center gap-3 mb-2">
                   <Image
                     src={comment.profileImage}
@@ -140,7 +136,6 @@ const Page: FC<BlogPageProps> = ({ params, searchParams }) => {
                     Reply
                   </button>
                 </div>
-                {/* Replies to Main Comment */}
                 {comment.replies.length > 0 && (
                   <div className="ml-10 text-gray-800 dark:text-gray-50">
                     {comment.replies.map((reply, replyIndex) => (
@@ -167,7 +162,6 @@ const Page: FC<BlogPageProps> = ({ params, searchParams }) => {
                     ))}
                   </div>
                 )}
-                {/* Reply Input */}
                 {replyingTo && replyingTo.index === index && (
                   <div className="ml-10 flex gap-2 mt-2">
                     <input
@@ -191,7 +185,6 @@ const Page: FC<BlogPageProps> = ({ params, searchParams }) => {
             <p className="text-gray-900 dark:text-gray-50">No comments yet. Be the first to comment!</p>
           )}
         </div>
-        {/* Add new comment */}
         <div className="flex gap-2">
           <input
             type="text"

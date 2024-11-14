@@ -1,4 +1,3 @@
-// myblog/components/Footer.tsx
 "use client";
 
 import React from "react";
@@ -9,7 +8,6 @@ import { Links } from "../constants/links";
 const Footer: React.FC = () => {
   return (
     <footer className="footer footer-center p-10 bg-base-200 gap-10 text-base-content rounded dark:bg-dark dark:text-white border-t dark:border-none">
-      {/* Navigation Links */}
       <nav className="grid grid-flow-col text-lg gap-4">
         {Links.map((link, index) => {
           const isActive = useMenuActive(link.route);
@@ -25,7 +23,6 @@ const Footer: React.FC = () => {
         })}
       </nav>
 
-      {/* Social Media Icons */}
       <nav className="grid grid-flow-col gap-4">
         <a
           href="https://twitter.com"
@@ -79,8 +76,6 @@ const Footer: React.FC = () => {
           </svg>
         </a>
       </nav>
-
-      {/* Footer Copyright */}
       <aside>
         <p className="text-med">Copyright © 2025 - All rights reserved by Shaikh Muhammad Yaseen</p>
       </aside>

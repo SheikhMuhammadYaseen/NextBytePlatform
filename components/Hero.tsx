@@ -3,7 +3,6 @@ import { posts } from "../constants/posts";
 import Link from "next/link";
 import { FC } from "react";
 
-// Define Post type based on the structure of each post object
 interface Post {
   id: number;
   title: string;
@@ -37,10 +36,8 @@ const Hero: FC = () => {
                 }}
               >
                 <div className="relative overflow-hidden w-full">
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-black/30 transition-opacity duration-300 group-hover:bg-black/40" />
                   
-                  {/* Text container */}
                   <div className="absolute inset-0 flex flex-col justify-between p-5 z-10">
                     <div>
                       <h2 className="text-white text-3xl font-bold mb-2 px-1">
@@ -82,10 +79,7 @@ const Hero: FC = () => {
                 }}
               >
                 <div className="relative overflow-hidden w-full">
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-black/30 transition-opacity duration-300 group-hover:bg-black/40" />
-                  
-                  {/* Text container */}
                   <div className="absolute inset-0 flex flex-col justify-between p-5 z-10">
                     <div>
                       <h2 className="text-white text-3xl font-bold mb-2 px-1">

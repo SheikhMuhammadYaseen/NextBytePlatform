@@ -24,7 +24,7 @@ const Navbar: FC = () => {
 
         <div className="flex gap-8 max-lg:gap-5 items-center flex-1 max-md:hidden text-gray-600 dark:text-white justify-center">
           {Links.map((link, index) => {
-            const isActive = useMenuActive(link.route); // TypeScript should now understand this
+            const isActive = useMenuActive(link.route);
             return <LinkItem key={index} route={link.route} label={link.label} isActive={isActive} />;
           })}
         </div>
