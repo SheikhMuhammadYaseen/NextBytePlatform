@@ -29,7 +29,7 @@ const PostFilter: React.FC<PostFilterProps> = ({
     <div className="flex gap-5 my-10 flex-wrap justify-center text-gray-900 dark:text-white">
       <button
         className={clsx(
-          "py-1 px-3",
+          "py-1 px-3 font-semibold",
           activeCategory === "all" ? "bg-sky-400 text-white rounded-md" : "text-gray-900 dark:text-white"
         )}
         onClick={() => setActiveCategory("all")}
@@ -38,7 +38,7 @@ const PostFilter: React.FC<PostFilterProps> = ({
       </button>
       <button
         className={clsx(
-          "py-1 px-3",
+          "py-1 px-3 font-semibold",
           activeCategory === "web development"
             ? "bg-sky-400 text-white rounded-md"
             : "text-gray-900 dark:text-white"
@@ -49,7 +49,7 @@ const PostFilter: React.FC<PostFilterProps> = ({
       </button>
       <button
         className={clsx(
-          "py-1 px-3",
+          "py-1 px-3 font-semibold",
           activeCategory === "cybersecurity"
             ? "bg-sky-400 text-white rounded-md"
             : "text-gray-900 dark:text-white"
@@ -60,7 +60,7 @@ const PostFilter: React.FC<PostFilterProps> = ({
       </button>
       <button
         className={clsx(
-          "py-1 px-3",
+          "py-1 px-3 font-semibold",
           activeCategory === "mobile development"
             ? "bg-sky-400 text-white rounded-md"
             : "text-gray-900 dark:text-white"
@@ -71,7 +71,7 @@ const PostFilter: React.FC<PostFilterProps> = ({
       </button>
       <button
         className={clsx(
-          "py-1 px-3",
+          "py-1 px-3 font-semibold",
           activeCategory === "artificial intelligence"
             ? "bg-sky-400 text-white rounded-md"
             : "text-gray-900 dark:text-white"

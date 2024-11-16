@@ -22,12 +22,13 @@ const Navbar: FC = () => {
           </div>
         </Link>
 
-        <div className="flex gap-8 max-lg:gap-5 items-center flex-1 max-md:hidden text-gray-600 dark:text-white justify-center">
+        <div className="flex gap-8 max-lg:gap-5 items-center flex-1 max-md:hidden text-black dark:text-white justify-center font-semibold">
           {Links.map((link, index) => {
             const isActive = useMenuActive(link.route);
             return <LinkItem key={index} route={link.route} label={link.label} isActive={isActive} />;
           })}
         </div>
+
         <div className="flex-1 justify-end flex gap-3 items-center">
           <ThemeToggle />
           <MobileMenu />

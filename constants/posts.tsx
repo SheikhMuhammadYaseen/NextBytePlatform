@@ -50,7 +50,7 @@ export const posts: Post[] = [
     featured: true,
     tags: ["technology"],
     authorImage:
-      "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1594&q=80",
+      "https://images.unsplash.com/photo-1579038773867-044c48829161?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     authorName: "Antonio Rogers",
     publishDate: "September 27, 2025",
   },
@@ -70,7 +70,7 @@ export const posts: Post[] = [
   },
 
   {
-    id: 6,
+    id: 5,
     title: "The Rise of 5G Technology",
     image_url:
       "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -79,12 +79,12 @@ export const posts: Post[] = [
     featured: true,
     tags: ["cybersecurity"],
     authorImage:
-      "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1594&q=80",
+      "https://images.unsplash.com/photo-1579038773867-044c48829161?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     authorName: "Antonio Rogers",
     publishDate: "September 27, 2025",
   },
   {
-    id: 7,
+    id: 6,
     title: "The Importance of Secure Passwords",
     image_url:
       "https://images.unsplash.com/photo-1614064642639-e398cf05badb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -98,7 +98,7 @@ export const posts: Post[] = [
     publishDate: "January 15, 2025",
   },
   {
-    id: 8,
+    id: 7,
     title: "Protecting Against Phishing Attacks",
     image_url:
       "https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=1470&q=80",
@@ -112,7 +112,7 @@ export const posts: Post[] = [
     publishDate: "March 22, 2025",
   },
   {
-    id: 9,
+    id: 8,
     title: "Emerging Cyber Threats in 2025",
     image_url:
       "https://images.unsplash.com/photo-1624969862644-791f3dc98927?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -121,12 +121,12 @@ export const posts: Post[] = [
     featured: false,
     tags: ["cybersecurity"],
     authorImage:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1594&q=80",
+      "https://images.unsplash.com/photo-1495716868937-273203d5bb0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     authorName: "Lucia Gray",
     publishDate: "June 9, 2025",
   },
   {
-    id: 10,
+    id: 9,
     title: "Understanding VPNs",
     image_url:
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -140,7 +140,7 @@ export const posts: Post[] = [
     publishDate: "August 27, 2025",
   },
   {
-    id: 11,
+    id: 10,
     title: "Best Practices for Safety",
     image_url:
       "https://images.unsplash.com/photo-1618060932014-4deda4932554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -154,7 +154,7 @@ export const posts: Post[] = [
     publishDate: "October 14, 2025",
   },
   {
-    id: 12,
+    id: 11,
     title: "Modern Front-end Frameworks",
     image_url:
       "https://images.unsplash.com/photo-1610986603166-f78428624e76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1458&q=80",
@@ -168,7 +168,7 @@ export const posts: Post[] = [
     publishDate: "February 12, 2025",
   },
   {
-    id: 13,
+    id: 12,
     title: "Benefits and Best Practices",
     image_url:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
@@ -182,7 +182,7 @@ export const posts: Post[] = [
     publishDate: "April 7, 2025",
   },
   {
-    id: 14,
+    id: 13,
     title: "Optimizing Web Performance",
     image_url:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -196,7 +196,7 @@ export const posts: Post[] = [
     publishDate: "June 3, 2025",
   },
   {
-    id: 15,
+    id: 14,
     title: "API First Design: Why and How?",
     image_url:
       "https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -210,7 +210,7 @@ export const posts: Post[] = [
     publishDate: "July 19, 2025",
   },
   {
-    id: 16,
+    id: 15,
     title:
       "Progressive Web Apps: The Future of Web Development?",
     image_url:
@@ -225,7 +225,7 @@ export const posts: Post[] = [
     publishDate: "October 5, 2025",
   },
   {
-    id: 17,
+    id: 16,
     title: 
       "Neural Networks: A Deep Dive",
     image_url:
@@ -240,7 +240,7 @@ export const posts: Post[] = [
     publishDate: "February 3, 2025",
   },
   {
-    id: 18,
+    id: 17,
     title: 
       "Reinforcement Learning: Machines That Learn From Experience",
     image_url:
@@ -255,7 +255,7 @@ export const posts: Post[] = [
     publishDate: "April 12, 2025",
   },
   {
-    id: 19,
+    id: 18,
     title:
       "Natural Language Processing: Communicating with Machines",
     image_url:
@@ -270,7 +270,7 @@ export const posts: Post[] = [
     publishDate: "June 24, 2025",
   },
   {
-    id: 20,
+    id: 19,
     title:
       "Generative Adversarial Networks (GANs): Creating with AI",
     image_url:
@@ -285,7 +285,7 @@ export const posts: Post[] = [
     publishDate: "July 13, 2025",
   },
   {
-    id: 21,
+    id: 20,
     title:
       "Ethics in AI: Balancing Innovation with Responsibility",
     image_url:
@@ -300,7 +300,7 @@ export const posts: Post[] = [
     publishDate: "October 20, 2025",
   },
   {
-    id: 22,
+    id: 21,
     title:
       "Cross-Platform Development: React Native vs. Flutter",
     image_url:
@@ -310,12 +310,12 @@ export const posts: Post[] = [
     featured: false,
     tags: ["mobile development"],
     authorImage:
-      "https://images.unsplash.com/photo-1519241047957-b7082e773ae7?auto=format&fit=crop&w=1374&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1594&q=80",
     authorName: "Hannah Brooks",
     publishDate: "February 10, 2025",
   },
   {
-    id: 23,
+    id: 22,
     title: "Building Engaging Mobile User Interfaces",
     image_url:
       "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1501&q=80",
@@ -329,7 +329,7 @@ export const posts: Post[] = [
     publishDate: "April 5, 2025",
   },
   {
-    id: 24,
+    id: 23,
     title: "The Rise of Progressive Web Apps (PWAs)",
     image_url:
       "https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&w=1470&q=80",
@@ -343,7 +343,7 @@ export const posts: Post[] = [
     publishDate: "June 20, 2025",
   },
   {
-    id: 25,
+    id: 24,
     title: "Optimizing Mobile Apps for Performance",
     image_url:
       "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",

@@ -9,7 +9,7 @@ const Page: React.FC = () => {
         </h1>
         <Image src="/assets/about.jpg" width={600} height={600} alt="about us" className="rounded-md" />
         
-        <div className="max-w-[600px] text-center text-gray-600 dark:text-gray-50 space-y-4">
+        <div className="max-w-[600px] text-center text-black dark:text-gray-50 space-y-4">
           <p>
             Welcome to NextByte – where technology meets tomorrow! Our journey started with a simple goal: to decode the fast-paced world of technology and make it accessible, exciting, and relevant for everyone. Founded by a group of tech enthusiasts, NextByte was born out of a shared passion for innovation and a curiosity to explore what’s next in tech.
           </p>

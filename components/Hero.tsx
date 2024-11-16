@@ -40,25 +40,25 @@ const Hero: FC = () => {
                   
                   <div className="absolute inset-0 flex flex-col justify-between p-5 z-10">
                     <div>
-                      <h2 className="text-white text-3xl font-bold mb-2 px-1">
+                      <h2 className="text-white text-3xl font-bold mb-2 px-1 text-shadow-md">
                         {post.title}
                       </h2>
                       <span className="text-gray-50 bg-sky-400 rounded-md px-2">
                         {post.tags.join(", ")}
                       </span>
                     </div>
-                    <div className="text-white font-bold text-sm">
+                    <div className="text-white font-bold text-sm text-shadow-md">
                       <span>{post.publishDate}</span>
                     </div>
                   </div>
                   {post.image_url && (
-                  <Image
-                src={post.image_url}
-                alt="blog picture"
-                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
-                height={400}
-                width={400}
-                  />
+                    <Image
+                      src={post.image_url}
+                      alt="blog picture"
+                      className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                      height={400}
+                      width={400}
+                    />
                   )}
                 </div>
               </Link>
@@ -82,25 +82,25 @@ const Hero: FC = () => {
                   <div className="absolute inset-0 bg-black/30 transition-opacity duration-300 group-hover:bg-black/40" />
                   <div className="absolute inset-0 flex flex-col justify-between p-5 z-10">
                     <div>
-                      <h2 className="text-white text-3xl font-bold mb-2 px-1">
+                      <h2 className="text-white text-3xl font-bold mb-2 px-1 text-shadow-md">
                         {post.title}
                       </h2>
                       <span className="text-gray-50 bg-sky-400 rounded-md px-2">
                         {post.tags.join(", ")}
                       </span>
                     </div>
-                    <div className="text-white font-bold text-sm">
+                    <div className="text-white font-bold text-sm text-shadow-md">
                       <span>{post.publishDate}</span>
                     </div>
                   </div>
                   {post.image_url && (
-                  <Image
-                src={post.image_url}
-                alt="blog picture"
-                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
-                height={400}
-                width={400}
-                  />
+                    <Image
+                      src={post.image_url}
+                      alt="blog picture"
+                      className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                      height={400}
+                      width={400}
+                    />
                   )}
                 </div>
               </Link>

@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Links } from "../constants/links";
 import { useState } from "react";
@@ -21,10 +19,10 @@ const MobileMenu: React.FC = () => {
           onChange={mobileMenuHandler}
           checked={!openMobileMenu}
         />
-        <span className="dark:text-white swap-on fill-current">
+        <span className="text-black dark:text-white swap-on fill-current">
           <HiMenu size={24} />
         </span>
-        <span className="dark:text-white swap-off fill-current">
+        <span className="text-black dark:text-white swap-off fill-current">
           <MdOutlineClose size={24} />
         </span>
       </label>
@@ -32,7 +30,11 @@ const MobileMenu: React.FC = () => {
       {openMobileMenu && (
         <div className="mobile-menu">
           {Links.map((link, index) => (
-            <Link key={index} href={link.route}>
+            <Link
+              key={index}
+              href={link.route}
+              className="block py-0.5 px-1 text-white dark:text-white font-semibold"
+            >
               {link.label}
             </Link>
           ))}

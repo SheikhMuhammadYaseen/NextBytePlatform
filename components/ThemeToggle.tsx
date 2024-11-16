@@ -1,17 +1,12 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";
 import clsx from "clsx";
 
 const ThemeToggle: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(true);
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") setDarkMode(true);
-  }, []);
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
 
   useEffect(() => {
     if (darkMode) {
