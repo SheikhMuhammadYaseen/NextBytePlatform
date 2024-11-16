@@ -6,25 +6,27 @@ import LinkItem from "./LinkItem";
 import { Links } from "../constants/links";
 
 const Footer: React.FC = () => {
+  // Precompute active states for each link
+  const linkStates = Links.map((link) => ({
+    ...link,
+    isActive: useMenuActive(link.route),
+  }));
+
   return (
     <footer className="footer footer-center p-10 bg-base-200 gap-10 text-white rounded dark:bg-dark dark:text-white border-t dark:border-none">
       <nav className="grid grid-flow-col text-lg gap-4">
-        {Links.map((link, index) => {
-          const isActive = useMenuActive(link.route);
-          return (
-            <LinkItem
-              key={index}
-              route={link.route}
-              label={link.label}
-              isActive={isActive}
-              footer
-            />
-          );
-        })}
+        {linkStates.map((link, index) => (
+          <LinkItem
+            key={index}
+            route={link.route}
+            label={link.label}
+            isActive={link.isActive}
+            footer
+          />
+        ))}
       </nav>
 
       <nav className="grid grid-flow-col gap-4">
-        
         <a
           href="https://github.com"
           aria-label="GitHub"

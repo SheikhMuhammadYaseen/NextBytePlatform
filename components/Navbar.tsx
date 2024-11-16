@@ -10,6 +10,12 @@ import LinkItem from "./LinkItem";
 import { FC } from "react";
 
 const Navbar: FC = () => {
+  // Precompute active states for each link
+  const linkStates = Links.map((link) => ({
+    ...link,
+    isActive: useMenuActive(link.route),
+  }));
+
   return (
     <nav className="w-full py-5 dark:bg-dark">
       <div className="wrapper flex items-center justify-between">
@@ -23,10 +29,9 @@ const Navbar: FC = () => {
         </Link>
 
         <div className="flex gap-8 max-lg:gap-5 items-center flex-1 max-md:hidden text-black dark:text-white justify-center font-semibold">
-          {Links.map((link, index) => {
-            const isActive = useMenuActive(link.route);
-            return <LinkItem key={index} route={link.route} label={link.label} isActive={isActive} />;
-          })}
+          {linkStates.map((link, index) => (
+            <LinkItem key={index} route={link.route} label={link.label} isActive={link.isActive} />
+          ))}
         </div>
 
         <div className="flex-1 justify-end flex gap-3 items-center">
