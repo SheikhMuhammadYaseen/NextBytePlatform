@@ -6,7 +6,6 @@ import clsx from "clsx";
 const ThemeToggle: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
-  // Set the theme after the component has mounted
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme === "dark") {
@@ -18,7 +17,6 @@ const ThemeToggle: React.FC = () => {
     }
   }, []);
 
-  // Update localStorage and the document's class on theme change
   useEffect(() => {
     if (darkMode) {
       localStorage.setItem("theme", "dark");

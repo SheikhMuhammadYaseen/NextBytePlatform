@@ -10,22 +10,22 @@ const Footer: React.FC = () => {
     {
       href: "https://github.com",
       label: "GitHub",
-      icon: <FaGithub size={24} />,
+      icon: <FaGithub size={32} />,
     },
     {
       href: "https://youtube.com",
       label: "YouTube",
-      icon: <FaYoutube size={24} />,
+      icon: <FaYoutube size={32} />,
     },
     {
       href: "https://facebook.com",
       label: "Facebook",
-      icon: <FaFacebookF size={24} />,
+      icon: <FaFacebookF size={32} />,
     },
     {
       href: "https://twitter.com",
       label: "Twitter",
-      icon: <FaTwitter size={24} />,
+      icon: <FaTwitter size={32} />,
     },
   ];
 
