@@ -8,9 +8,9 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class', // Enable dark mode based on 'dark' class
+  darkMode: 'class', 
   daisyui: {
-    themes: ["light", "dark", "cupcake"], // Enable desired themes here
+    themes: ["light", "dark", "cupcake"], 
   },
   theme: {
     screens: {
@@ -19,8 +19,8 @@ const config: Config = {
     },
     extend: {
       colors: {
-        dark: '#232A3C',   // Custom dark color
-        medium: '#293245', // Custom medium color
+        dark: '#232A3C',   
+        medium: '#293245', 
       },
     },
   },

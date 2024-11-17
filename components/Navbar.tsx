@@ -10,7 +10,7 @@ import LinkItem from "./LinkItem";
 import { FC } from "react";
 
 const Navbar: FC = () => {
-  // Precompute active states for each link
+  // Precompute active states
   const linkStates = Links.map((link) => ({
     ...link,
     isActive: useMenuActive(link.route),
