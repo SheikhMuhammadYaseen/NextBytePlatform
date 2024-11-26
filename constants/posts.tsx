@@ -10,7 +10,7 @@ export interface Post {
   publishDate?: string;
 }
 
-export const posts: Post[] = [
+const initialPosts: Post[] = [
   
   {
     id: 1,
@@ -357,3 +357,50 @@ export const posts: Post[] = [
     publishDate: "August 18, 2025",
   },
 ];
+
+const getPostsFromLocalStorage = (): Post[] => {
+  if (typeof window !== "undefined") {
+    const savedPosts = localStorage.getItem("posts");
+    if (savedPosts) {
+      return JSON.parse(savedPosts);
+    } else {
+      localStorage.setItem("posts", JSON.stringify(initialPosts));
+      return initialPosts;
+    }
+  }
+  return initialPosts; // Fallback for SSR
+};
+
+// Load posts (only on client-side)
+export const posts: Post[] = getPostsFromLocalStorage();
+
+// Function to save posts to local storage
+const savePosts = (posts: Post[]) => {
+  if (typeof window !== "undefined") {
+    localStorage.setItem("posts", JSON.stringify(posts));
+  }
+};
+
+// Add a new post
+export const addPost = (newPost: Post) => {
+  posts.push(newPost);
+  savePosts(posts);
+};
+
+// Delete a post
+export const deletePost = (id: number) => {
+  const index = posts.findIndex((post) => post.id === id);
+  if (index > -1) {
+    posts.splice(index, 1);
+    savePosts(posts);
+  }
+};
+
+// Update a post
+export const updatePost = (id: number, updatedPost: Partial<Post>) => {
+  const postIndex = posts.findIndex((post) => post.id === id);
+  if (postIndex > -1) {
+    posts[postIndex] = { ...posts[postIndex], ...updatedPost };
+    savePosts(posts);
+  }
+};
